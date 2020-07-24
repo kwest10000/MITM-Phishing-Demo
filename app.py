@@ -20,6 +20,5 @@ def home():
 
 
 # on running python app.py
-if __name__ == "__main__":
-   # run the flask app
-   app.run()
+if __name__ == "__main__": 
+    app.run(host ='0.0.0.0', port = 5001, debug = True) 
