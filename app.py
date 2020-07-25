@@ -9,16 +9,10 @@ app = Flask(__name__)
 
 # create a route /
 @app.route("/")               
-def hello():
-   # return "hello world" when
-   return "Hello World!"
-
-@app.route("/home")
-def home():
+def phish():
    return render_template("home.html")
-
-
+   
 
 # on running python app.py
 if __name__ == "__main__": 
-    app.run(host ='0.0.0.0', port = 5001, debug = True) 
+    app.run(host ='0.0.0.0', port = 5002, debug = True) 
